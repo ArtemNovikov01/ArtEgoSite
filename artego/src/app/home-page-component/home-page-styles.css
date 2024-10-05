@@ -70,7 +70,10 @@ body, html {
   } 
 
   /* Main */
-
+  .inline-container{
+    display: flex;
+  }
+  
   .main{
     display: flex;
     margin-top: 5%;
@@ -83,7 +86,13 @@ body, html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
+  .title{
+    /* padding: 30%; */
+    width: 300%;
+  }
+
   .button-request{
+    width: 150%;
     margin-top: 10%;
     padding: 5% 20%;
     border-radius: 35px;
@@ -100,7 +109,7 @@ body, html {
   }.button-request:hover {background-color: #67cbf3}
 
   .start-img-container{
-    margin-left: 10%;
+    margin-left: 50%;
   } 
 
   /* SHARED */

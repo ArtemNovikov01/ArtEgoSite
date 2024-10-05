@@ -1,3 +1,5 @@
+import { TabsTypes } from "../shared/enums/tabs-types";
+import RoutingPipe from "../shared/pipes/routing-pipe";
 import HomeModal from "./home-page-modal/home-page-modal";
 
 export class HomeEvents {
@@ -10,13 +12,14 @@ export class HomeEvents {
         stateModal(null);
     }
 
-    sendRequest(responseState: React.Dispatch<React.SetStateAction<React.ReactNode>>){
-        responseState(<div><h1>Заявка отправлена</h1></div>);
-    }
     handleOverlayClick(e: React.MouseEvent, stateModal: React.Dispatch<React.SetStateAction<React.ReactNode>>){
         const modal = document.querySelector('.modal');
         if (modal && !modal.contains(e.target as Node)) {
             this.closeModal(stateModal);
         }
+    }
+
+    transitionHref(tabType: TabsTypes, stateComponent: React.Dispatch<React.SetStateAction<React.ReactNode>>){
+        stateComponent(RoutingPipe(tabType))
     }
   }
