@@ -100,7 +100,7 @@ body, html {
   }.button-request:hover {background-color: #67cbf3}
 
   .start-img-container{
-    margin-left: 15%;
+    margin-left: 10%;
   } 
 
   /* SHARED */
@@ -133,8 +133,8 @@ body, html {
     }
   
     .start-img{
-      width: 400px;
-      height: 450px;
+      width: 500px;
+      height: 500px;
     } 
   }
 

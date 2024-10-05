@@ -1,0 +1,13 @@
+.global-background {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(#ffffff);
+    flex-direction: column;
+  }
+
+  .block-color{
+    border-radius: 20px;
+    width: 40%;
+    height: 10%;
+    margin-left: 10%;
+  }
