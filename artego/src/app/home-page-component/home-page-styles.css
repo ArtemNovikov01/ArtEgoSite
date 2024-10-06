@@ -9,7 +9,12 @@ body, html {
     background: linear-gradient(to bottom, #ffffff, #87ceeb);
     flex-direction: column;
   }
-
+  .global-background-white{
+    height: 100vh;
+    display: flex;
+    background: white;
+    flex-direction: column;
+  }
   /* HEADER */
 
   .header {
@@ -20,12 +25,14 @@ body, html {
   }
 
   .logo {
+    cursor: pointer;
     margin-left: 1%;
     display: flex;
     align-items: center;
   }
   
   .ratio {
+    cursor: pointer;
     width: 30px;
     height: 30px;
     margin-bottom: 20px;
@@ -55,6 +62,7 @@ body, html {
   }
   
   .phone-image {
+    cursor: pointer;
     margin-top: 10px;
     width: 30px;
     height: 30px;

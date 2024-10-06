@@ -1,5 +1,8 @@
+import "./projects-page-styles.css"
+
 export default function Projects() {
     return (
-            <h1>Проекты</h1>
+        <div className="background-block"></div>
+        // <h1>Проекты</h1>
         );
 }

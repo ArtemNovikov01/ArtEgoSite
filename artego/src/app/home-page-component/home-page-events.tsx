@@ -20,6 +20,9 @@ export class HomeEvents {
     }
 
     transitionHref(tabType: TabsTypes, stateComponent: React.Dispatch<React.SetStateAction<React.ReactNode>>){
+        if(tabType === TabsTypes.Home){
+            stateComponent(null);
+        }
         stateComponent(RoutingPipe(tabType))
     }
   }

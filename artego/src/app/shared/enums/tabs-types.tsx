@@ -4,4 +4,5 @@ export enum TabsTypes {
     Contacts = 3,
     AboutCompany = 4,
     Blog = 5,
+    Home = 6,
   }
